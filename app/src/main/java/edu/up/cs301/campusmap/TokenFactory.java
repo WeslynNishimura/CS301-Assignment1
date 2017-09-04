@@ -32,7 +32,7 @@ public class TokenFactory {
             case 1:
                 return new SquareToken(x,y);
             case 2:
-                return new SimpleMapToken(x,y);
+                return new ComplexToken(x,y);
             default:
                 return new SimpleMapToken(x,y);
         }
