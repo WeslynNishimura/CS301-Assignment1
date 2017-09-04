@@ -61,4 +61,4 @@ public class SimpleMapToken {
         canvas.drawCircle(x, y, radius, paint);
     }//drawOn
 
-}//class SimpleMapToken
+}//class SimpleMa
