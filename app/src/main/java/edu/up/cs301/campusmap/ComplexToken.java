@@ -9,15 +9,24 @@ import android.graphics.Path;
  * This class inherits from SimpleMapToken and draws tokens in a more complex shape
  * Created by Weslyn Nishimura on 9/3/2017.
  */
-
 public class ComplexToken extends SimpleMapToken {
 
+    /**
+     * Constructor
+     * @param xCoord the x-coordinate
+     * @param yCoord the y-coordinate
+     */
     public ComplexToken(float xCoord, float yCoord) {
         super(xCoord, yCoord);
     } // ComplexToken
 
+    /**
+     * Paint the token onto a given canvas
+     * @param canvas the canvas on which to draw
+     */
     public void drawOn(Canvas canvas) {
         // paint the complex token on the canvas
+        // (see log for Path help on this project)
         Path star = new Path();
         star.moveTo(x+15, y);
         star.lineTo(x+25, y+30);
@@ -28,4 +37,5 @@ public class ComplexToken extends SimpleMapToken {
 
         canvas.drawPath(star, paint);
     } // drawOn
-}
+
+} // ComplexToken

@@ -1,1 +1,45 @@
-Edit this file to record your use of outside resources in doing this assignment.
+Weslyn W. Nishimura
+Assignment 1 Log
+
+Entry #1
+Date: 9/3/2017
+Problem:
+    In order to create tokens with different colors, I need to know how to generate different
+    integer numbers using Java which would be used for the rgb values.
+Resource Used:
+    I googled "random number generation in Java" and was brought to a stackoverflow.com page
+    (https://stackoverflow.com/questions/5887709/getting-random-numbers-in-java) which
+    provided information on Random in Java.
+Solution:
+    For creating a random integer number, the class Random was used.
+
+    Random rand = new Random();
+    int  n = rand.nextInt(255) + 1;
+    // this generates random number between 255 and 1
+
+Entry #2
+Date: 9/3/2017
+Problem:
+    In order to create SquareToken, it was required that inheritance be used. When I created the
+    SquareToken class, the program would not compile.
+Resource Used:
+    I used the course textbook "Java: An Introduction to Problem Solving and Programming" to remind
+    myself what inheritance is and how it can be implemented. It should that to create a subclass of
+    SimpleMapToken, SquareToken would need to be created using the following format -
+
+    public class [DerivedClass] extends [BaseClass] {}
+Solution:
+    By creating a new class in Android Studio and listing SimpleMapToken as the superclass for
+    SquareToken, I was able to create a subclass.
+
+Entry #3
+Date: 9/3/2017
+Problem:
+    In order to create a complex token, I tried to use Path the same was Polygon is used in standard
+    java. However the functions were not the same.
+Resource Used:
+    I used the Android Developer website to learn more about the Path class.
+    https://developer.android.com/reference/android/graphics/Path.html
+Solution:
+    By following the functions provided in the resource above, I was able to create a star shape
+    using Path.

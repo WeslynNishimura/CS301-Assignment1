@@ -1,6 +1,4 @@
-//dummy comment
 package edu.up.cs301.campusmap;
-
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -61,4 +59,4 @@ public class SimpleMapToken {
         canvas.drawCircle(x, y, radius, paint);
     }//drawOn
 
-}//class SimpleMa
+}//class SimpleMapToken

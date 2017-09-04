@@ -7,7 +7,7 @@ package edu.up.cs301.campusmap;
  *
  * @author Andrew M. Nuxoll
  * @author Steven R. Vegdahl
- * @author <your name here>
+ * @author Weslyn W. Nishimura
  * @version August 2017
  */
 
@@ -24,16 +24,16 @@ public class TokenFactory {
      */
     public static SimpleMapToken createMapToken(float x, float y, int type)
     {
-        //For now, only one type of map token exists
+
         switch(type)
         {
-            case 0:
+            case 0: // Circle Token
                 return new SimpleMapToken(x,y);
-            case 1:
+            case 1: // Square Token
                 return new SquareToken(x,y);
-            case 2:
+            case 2: // Complex Token (star shape)
                 return new ComplexToken(x,y);
-            default:
+            default: // Circle Token
                 return new SimpleMapToken(x,y);
         }
     }//createMapToken

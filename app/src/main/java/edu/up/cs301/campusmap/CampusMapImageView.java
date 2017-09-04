@@ -11,7 +11,7 @@ import android.widget.ImageView;
  * This class displays the campus map.
  *
  * @author Steven R. Vegdahl
- * @author <your name here>
+ * @author Weslyn W. Nishimura
  * @version August 2017
  */
 public class CampusMapImageView extends ImageView {
